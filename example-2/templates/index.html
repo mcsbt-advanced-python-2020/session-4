@@ -4,7 +4,13 @@
   </head>
   <body>
     <a href="http://localhost:5000/"><h1>My webpage</h1></a>
-
+    
+    {% if logged_in %}
+    <a href="..">sign out</a>
+    {% else %}
+    <a href="..">sign in</a>
+    {% endif %}
+    
     <h2>Hello {{name}}</h2>
   </body>
 </html>

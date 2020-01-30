@@ -19,9 +19,13 @@ tweets = [
 ]
 
 
+
 @app.route("/")
 def index():
-    return render_template("tweet.html")
+    return render_template(
+            "tweet.html",
+            tweets = tweets)
+            
 
 
 app.run(debug = True)

@@ -5,6 +5,10 @@
   <body>
     <h1>Magic twitter!</h1>
 
-    <!-- This is an HTML comment, put your code under this line -->
+    <ul>
+    {% for tweet in tweets %}
+    <li><strong>{{tweet.username}}: </strong>{{tweet.tweet}}</li>
+    {% endfor %}
+    </ul>
   </body>
 </html>
